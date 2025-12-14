@@ -1,0 +1,28 @@
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+overflow-x: hidden;
+background-color: #181818;
+}
+.container{
+columns: 3;
+gap: 20px;
+padding: 50px 100px;
+}
+.container img {
+margin-top: 10px;
+width: 100%;
+height: auto;
+border: 2px solid rgba(#255, #255, #255, 0.5);
+border-radius: 10px;
+transition: 0.3s ease;
+}
+.container img:hover {
+scale: 1.05;
+}
+.container:has(img:hover)
+img:not(:hover)
+{ filter: blur(10px) ; -webkit-filter: blur(10px) ;
+}
